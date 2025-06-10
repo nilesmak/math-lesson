@@ -1,0 +1,63 @@
+/* Add these new styles to the end of your style.css file */
+
+.report-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: center;
+}
+
+.report-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.report-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #e74c3c; /* Default: Not mastered */
+}
+
+.report-item.mastered {
+    border-left-color: #2ecc71; /* Green for mastered */
+}
+
+.report-title {
+    font-weight: bold;
+    text-align: left;
+}
+
+.report-score {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.report-summary {
+    margin-top: 25px;
+    font-size: 1.3em;
+}
+
+#restart-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.2s;
+}
+
+#restart-btn:hover {
+    background-color: #2980b9;
+}
