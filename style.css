@@ -1,5 +1,142 @@
-/* Add these new styles to the end of your style.css file */
+/* Universal settings for better layout control */
+* {
+    box-sizing: border-box;
+}
 
+body {
+    /* NEW: Using Google Fonts for a consistent look everywhere */
+    font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 15px;
+}
+
+.lesson-container {
+    width: 100%;
+    max-width: 700px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.section-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.content-block {
+    margin-bottom: 30px;
+    border-left: 4px solid #007bff;
+    padding-left: 20px;
+}
+
+.content-block h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+#example-question {
+    background-color: #e9f5ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#example-steps p {
+    padding: 10px;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+#question-text {
+    font-weight: bold;
+    font-size: 1.15em;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-btn {
+    padding: 15px;
+    border: 2px solid #bdc3c7;
+    background-color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.05em;
+    transition: all 0.2s ease-in-out;
+}
+
+.option-btn:hover:not(:disabled) {
+    background-color: #f0f8ff;
+    border-color: #007bff;
+    transform: translateY(-2px);
+}
+
+.option-btn.correct {
+    background-color: #2ecc71;
+    color: white;
+    border-color: #27ae60;
+}
+
+.option-btn.incorrect {
+    background-color: #e74c3c;
+    color: white;
+    border-color: #c0392b;
+}
+
+#feedback-text {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#next-section-btn {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+#next-section-btn:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Report Card Styles */
 .report-card {
     background-color: #ffffff;
     border-radius: 12px;
@@ -22,11 +159,11 @@
     border-radius: 8px;
     margin-bottom: 10px;
     background-color: #f8f9fa;
-    border-left: 5px solid #e74c3c; /* Default: Not mastered */
+    border-left: 5px solid #e74c3c;
 }
 
 .report-item.mastered {
-    border-left-color: #2ecc71; /* Green for mastered */
+    border-left-color: #2ecc71;
 }
 
 .report-title {

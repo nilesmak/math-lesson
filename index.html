@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>等差數列互動練習</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- NEW: Added Google Fonts for consistent appearance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- UPDATED: Using a more explicit path for the stylesheet -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
     <div class="lesson-container">
         <h1 id="lesson-title"></h1>
         
-        <div class="section-card">
+        <div id="section-card" class="section-card">
             <h2 id="section-title"></h2>
             
             <div class="content-block">
@@ -36,8 +43,10 @@
             
             <button id="next-section-btn" class="hidden">前往下一節</button>
         </div>
+        <!-- The report card will be generated here by JavaScript -->
     </div>
 
-    <script src="script.js"></script>
+    <!-- UPDATED: Using a more explicit path for the script -->
+    <script src="./script.js"></script>
 </body>
 </html>
